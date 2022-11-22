@@ -1,11 +1,11 @@
-from flask import flask
+from flask import Flask
 from config import DevConfig
 
-app = Flask(__watchtower__)
+app = Flask(__name__)
 app.config.from_object (DevConfig)
 
 @app.route('/')
 def home():
     return '<h1>Im always watching you</h1>'
-if _watchtower_ -- '__main__':
-    app.run()_
+if __name__ == '__main__':
+        app.run()
